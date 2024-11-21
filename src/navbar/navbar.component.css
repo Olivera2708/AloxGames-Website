@@ -8,6 +8,7 @@
     height: 3rem;
     width: 100%;
     position: fixed;
+    z-index: 100;
 }
 
 .navbar a {
@@ -59,7 +60,7 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .navbar-links {
         position: fixed;
         top: 0;

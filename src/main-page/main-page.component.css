@@ -8,7 +8,7 @@
 }
 
 #information {
-  width: 30%;
+  width: 40%;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -55,7 +55,7 @@ h2 {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   h1 {
     font-size: 2.2rem;
   }

@@ -1,5 +1,6 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
 import {NgClass, NgIf} from "@angular/common";
+import {ScrollService} from "../scroll.service";
 
 @Component({
   selector: 'app-navbar',
@@ -13,6 +14,8 @@ export class NavbarComponent implements OnInit {
   isPhone = false;
   isInitialized: boolean = false;
 
+  constructor(private scrollService: ScrollService) {}
+
   ngOnInit(): void {
     this.checkIfPhone();
     this.isInitialized = true;
@@ -24,7 +27,7 @@ export class NavbarComponent implements OnInit {
   }
 
   private checkIfPhone() {
-    this.isPhone = window.innerWidth <= 768;
+    this.isPhone = window.innerWidth <= 1000;
   }
 
   toggleNavbar() {
@@ -33,5 +36,9 @@ export class NavbarComponent implements OnInit {
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  scrollToGames(): void {
+    this.scrollService.triggerScrollToGames();
   }
 }

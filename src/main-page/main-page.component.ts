@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ScrollService} from '../scroll.service';
 
 @Component({
   selector: 'app-main-page',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './main-page.component.css'
 })
 export class MainPageComponent {
+  constructor(private scrollService: ScrollService) {}
 
+  ScrollToGames() {
+    this.scrollService.triggerScrollToGames();
+  }
 }
