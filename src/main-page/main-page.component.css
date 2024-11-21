@@ -1,6 +1,6 @@
 #main-image {
   width: 100%;
-  height: calc(100vh - 4.2rem);
+  height: 100vh;
   background-image: url("/assets/main.webp");
   background-size: cover;
   background-position: center;
@@ -37,7 +37,7 @@ button {
 }
 
 button:hover {
-  background-color: #3c3c3c;
+  background-color: #252525;
   transform: scale(1.1);
 }
 

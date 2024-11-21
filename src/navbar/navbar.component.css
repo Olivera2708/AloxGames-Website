@@ -3,10 +3,11 @@
     align-items: center;
     justify-content: space-between;
     background-color: #101010;
-    padding: 0.6rem 2rem;
+    padding: 0.6rem 0;
     color: white;
-    position: relative;
     height: 3rem;
+    width: 100%;
+    position: fixed;
 }
 
 .navbar a {
@@ -15,15 +16,14 @@
     padding: 0.5rem 1rem;
 }
 
+.navbar-brand {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
 .navbar a.active {
     font-weight: bold;
     border-bottom: 2px solid #fff;
-}
-
-.navbar-brand a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
 }
 
 .navbar-links {
@@ -31,6 +31,10 @@
     gap: 1rem;
     align-items: center;
     font-size: 1.2em;
+}
+
+.navbar-links a {
+    cursor: pointer;
 }
 
 .navbar-toggle {
@@ -56,10 +60,6 @@
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        padding: 0.6rem 1rem;
-    }
-
     .navbar-links {
         position: fixed;
         top: 0;
@@ -75,6 +75,7 @@
     }
 
     .navbar-toggle {
+        margin-right: 1rem;
         display: block;
     }
 
