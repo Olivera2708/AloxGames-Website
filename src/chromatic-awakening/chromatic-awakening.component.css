@@ -1,6 +1,6 @@
 #chromatic-awakening {
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 48px);
   background: whitesmoke;
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +9,6 @@
 .ch-left {
   padding: 2rem 6rem;
   flex: 1;
-  height: 65%;
 }
 
 .ch-right {
@@ -32,7 +31,6 @@
   background: #252525;
   width: 100%;
   padding: 2rem 6rem;
-  height: 30%;
   display: flex;
   justify-content: space-between;
   gap: 4rem;

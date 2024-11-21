@@ -6,8 +6,8 @@
 
     <div class="navbar-links" [ngClass]="{'open': navbarOpen}">
         <a routerLink="/games" routerLinkActive="active" (click)="scrollToGames()">Our games</a>
-        <a routerLink="/about" routerLinkActive="active">About us</a>
-        <a routerLink="/contact" routerLinkActive="active">Contact</a>
+        <a routerLink="/about" routerLinkActive="active" (click)="scrollToAboutUs()">About us</a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="scrollToAboutUs()">Contact</a>
     </div>
 
     <div class="overlay" *ngIf="navbarOpen" (click)="toggleNavbar()"></div>

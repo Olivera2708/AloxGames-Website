@@ -41,4 +41,8 @@ export class NavbarComponent implements OnInit {
   scrollToGames(): void {
     this.scrollService.triggerScrollToGames();
   }
+
+  scrollToAboutUs(): void {
+    this.scrollService.triggerScrollToAboutUs();
+  }
 }

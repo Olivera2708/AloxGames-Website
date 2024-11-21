@@ -2,24 +2,24 @@ import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {ScrollService} from '../scroll.service';
 
 @Component({
-  selector: 'app-chromatic-awakening',
+  selector: 'app-about-us',
   imports: [],
-  templateUrl: './chromatic-awakening.component.html',
+  templateUrl: './about-us.component.html',
   standalone: true,
-  styleUrl: './chromatic-awakening.component.css'
+  styleUrl: './about-us.component.css'
 })
-export class ChromaticAwakeningComponent implements AfterViewInit{
-  @ViewChild('games') gamesElement!: ElementRef;
+export class AboutUsComponent implements AfterViewInit {
+  @ViewChild('about') gamesElement!: ElementRef;
 
   constructor(private scrollService: ScrollService) {}
 
   ngAfterViewInit(): void {
-    this.scrollService.scrollToGames$.subscribe(() => {
-      this.scrollToGames();
+    this.scrollService.scrollToAboutUs$.subscribe(() => {
+      this.scrollToAboutUs();
     });
   }
 
-  scrollToGames(): void {
+  scrollToAboutUs(): void {
     if (this.gamesElement) {
       const elementPosition = this.gamesElement.nativeElement.getBoundingClientRect().top + window.scrollY;
       const offset = 48;
