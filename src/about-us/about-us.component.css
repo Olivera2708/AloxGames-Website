@@ -157,4 +157,14 @@ a {
   .about-title {
     font-size: 2.4rem;
   }
+
+  .about-left {
+    padding-top: 8rem;
+    flex: 1;
+  }
+
+  .about-right {
+    flex: 1;
+    padding-top: 8rem;
+  }
 }
