@@ -13,13 +13,13 @@ footer {
 }
 
 .about-left {
-  padding: 2rem 6rem;
+  padding: 2rem 6rem 2rem 10%;
   flex: 1;
 }
 
 .about-right {
   flex: 1;
-  padding: 2rem 6rem;
+  padding: 2rem 6rem 2rem 2rem;
 }
 
 .about-title {
@@ -98,12 +98,10 @@ a {
   }
 
   #olivera p {
-    color: whitesmoke;
     font-size: 1.1rem;
   }
 
   #aleksandra p {
-    color: whitesmoke;
     font-size: 1.1rem;
   }
 
@@ -113,34 +111,36 @@ a {
 
   .about-title {
     font-size: 2rem;
+    color: whitesmoke;
   }
 
   .contact-title {
     font-size: 2rem;
-    color: whitesmoke;
   }
 
   .about-left {
     flex: 100%;
     padding: 2rem;
     height: auto;
+    background: #252525;
   }
 
   .about-left p {
     width: 100%;
     margin-top: 1rem;
     font-size: 1rem;
+    color: whitesmoke;
   }
 
   .about-right {
     flex: 100%;
     padding: 2rem;
     height: auto;
-    background: #252525;
+    background: whitesmoke;
   }
 
   a {
-    color: #e6e6e6;
+    color: #252525;
   }
 }
 

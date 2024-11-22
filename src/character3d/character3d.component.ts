@@ -71,7 +71,7 @@ export class Character3dComponent implements AfterViewInit, OnDestroy {
           const action = mixer.clipAction(fbx.animations[0]);
           action.play();
         }
-        
+
         this.container.style.visibility = 'visible';
       },
       (progress: ProgressEvent) => {
