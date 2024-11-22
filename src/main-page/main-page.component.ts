@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 import {ScrollService} from '../scroll.service';
 
 @Component({
@@ -8,8 +8,24 @@ import {ScrollService} from '../scroll.service';
   standalone: true,
   styleUrl: './main-page.component.css'
 })
-export class MainPageComponent {
+export class MainPageComponent implements AfterViewInit {
   constructor(private scrollService: ScrollService) {}
+
+  ngAfterViewInit() {
+    const videoElement = document.getElementById('background-video') as HTMLVideoElement;
+
+    if (videoElement) {
+      setTimeout(() => {
+        videoElement.play()
+          .then(() => {
+            console.log('Video started playing');
+          })
+          .catch((error) => {
+            console.error('Error playing video:', error);
+          });
+      }, 500);
+    }
+  }
 
   ScrollToGames() {
     this.scrollService.triggerScrollToGames();

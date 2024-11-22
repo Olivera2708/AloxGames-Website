@@ -48,8 +48,6 @@ export class Character3dComponent implements AfterViewInit, OnDestroy {
     const width = this.container.clientWidth;
     const height = this.container.clientHeight;
 
-    console.log(width);
-
     this.renderer.setSize(width, height);
 
     this.camera.aspect = width / height;
