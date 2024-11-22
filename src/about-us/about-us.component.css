@@ -59,24 +59,30 @@ a {
 
 #olivera {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 #aleksandra {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #olivera p {
   margin: 0;
   padding: 0;
-  width: 12rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #aleksandra p {
   margin: 0;
   padding: 0;
-  width: 12rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .email {
@@ -90,19 +96,21 @@ a {
 @media (max-width: 1000px) {
 
   #olivera {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   #aleksandra {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   #olivera p {
     font-size: 1.1rem;
+    width: 13rem;
   }
 
   #aleksandra p {
     font-size: 1.1rem;
+    width: 13rem;
   }
 
   .email {
