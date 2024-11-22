@@ -1,34 +1,40 @@
 #chromatic-awakening {
   width: 100%;
   height: calc(100vh - 48px);
-  background: whitesmoke;
+  background: #252525;
   display: flex;
   flex-wrap: wrap;
 }
 
 .ch-left {
-  padding: 2rem 6rem;
+  padding: 2rem 6rem 2rem 10%;
   flex: 1;
 }
 
 .ch-right {
   flex: 1;
+  background: #252525;
+  display: flex;
+  justify-content: center;
+  padding-right: 4rem;
 }
 
 .game-title {
   font-size: 3rem;
   margin: 0;
+  color: whitesmoke;
 }
 
 .ch-left p {
-  width: 70%;
+  width: 90%;
   margin-top: 3rem;
   font-weight: 500;
   font-size: 1.5rem;
+  color: whitesmoke;
 }
 
 .sample-images {
-  background: #252525;
+  background: whitesmoke;
   width: 100%;
   padding: 2rem 6rem;
   display: flex;
@@ -65,6 +71,7 @@
 
   .ch-right {
     flex: 100%;
+    padding-right: 0;
   }
 
   .sample-images {
