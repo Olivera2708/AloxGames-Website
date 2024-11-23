@@ -15,24 +15,30 @@
   <div class="ch-right">
       <app-character3d></app-character3d>
   </div>
-  <div class="sample-images">
-      <hr>
-      <div class="images">
-          <div class="area-left">
-            <img src="assets/volcano.jpg"/>
-          </div>
-          <div class="area-right">
-              <h2 class="area-title">Volcanic Area</h2>
-              <p>
-                  Step into a volcanic region where molten rivers carve paths through a barren, ash-covered terrain. Towering spires of obsidian rise against a sky painted in hues of fiery red and orange, with the air shimmering under the intense heat.
-                    <br>
-                  <br>
-                  Amidst this unforgiving environment, challenges await. Navigate treacherous paths, solve puzzles amidst steaming fissures, and uncover remnants of a forgotten past.
-                  <br>
-                  <br>
-                  Restore the vibrant red color to reveal hidden secrets and breathe life back into a world consumed by fire.
-              </p>
-          </div>
+  <div class="sample-images"
+       (touchstart)="onTouchStart($event)"
+       (touchend)="onTouchEnd($event)"
+       (mousedown)="stopAutoSlide()">
+    <div class="carousel">
+      <div class="carousel-item images" [class.active]="true">
+        <div class="area-left">
+          <img [src]="items[currentIndex].image" />
+        </div>
+        <div class="area-right">
+          <h2 class="area-title" [ngStyle]="{ 'color': items[currentIndex].color }">
+            {{ items[currentIndex].title }}
+          </h2>
+          <p [innerHTML]="items[currentIndex].description"></p>
+        </div>
       </div>
+    </div>
+    <div class="dots">
+      <div
+        class="dot"
+        *ngFor="let item of items; let i = index"
+        [class.active]="i === currentIndex"
+        (click)="goToSlide(i)"
+      ></div>
+    </div>
   </div>
 </div>
