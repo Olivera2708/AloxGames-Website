@@ -100,9 +100,6 @@ a {
 }
 
 @media (max-width: 1100px) {
-  .logo {
-    margin-left: 3rem;
-  }
 
   #info {
     margin-top: 2rem;
