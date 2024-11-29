@@ -50,7 +50,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       color: '#348c3d'
     },
     {
-      image: 'assets/mountains.jpg',
+      image: 'assets/mountain.png',
       title: 'Alpine Mountains',
       description: `Step into an alpine forest where snow blankets the landscape, creating a tranquil, wintry paradise. The towering pines are heavy with frost, and the silence is broken only by the soft crunch of snow beneath your feet.<br><br>
         Amidst the frozen stillness, your task is to restore life. Solve puzzles hidden beneath the snow, unlocking the flow of life in this frozen realm.<br><br>
