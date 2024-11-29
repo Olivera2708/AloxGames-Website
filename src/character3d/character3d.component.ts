@@ -15,6 +15,7 @@ export class Character3dComponent implements AfterViewInit, OnDestroy {
   private renderer: THREE.WebGLRenderer;
   private model: THREE.Object3D | null = null;
   private container!: HTMLElement;
+  private controls: OrbitControls | null = null;
 
   constructor(private elRef: ElementRef, private renderer2: Renderer2) {
     this.scene = new THREE.Scene();
@@ -57,18 +58,13 @@ export class Character3dComponent implements AfterViewInit, OnDestroy {
   private loadModel(): void {
     const loader = new FBXLoader();
     loader.load(
-      'assets/character.fbx',
+      'assets/char.fbx',
       (fbx: THREE.Object3D) => {
-        fbx.scale.set(0.001, 0.001, 0.001);
-        fbx.position.set(0, 0, 0);
+        fbx.scale.set(0.013, 0.013, 0.013);
+        fbx.position.set(0, -0.4, 0);
+        fbx.rotation.set(0, -0.3, 0);
         this.scene.add(fbx);
         this.model = fbx;
-
-        if (fbx.animations.length > 0) {
-          const mixer = new THREE.AnimationMixer(fbx);
-          const action = mixer.clipAction(fbx.animations[0]);
-          action.play();
-        }
 
         this.container.style.visibility = 'visible';
       },
@@ -90,14 +86,11 @@ export class Character3dComponent implements AfterViewInit, OnDestroy {
 
   private animate(): void {
     requestAnimationFrame(() => this.animate());
-    if (this.model) {
-      this.model.rotation.y += 0.01;
-    }
     this.renderer.render(this.scene, this.camera);
   }
 
   private zoomOutCamera(): void {
-    this.camera.position.set(0, 0.1, 0.44);
+    this.camera.position.set(0, 0, 1);
     this.camera.fov = 60;
     this.camera.updateProjectionMatrix();
   }
