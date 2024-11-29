@@ -11,6 +11,10 @@
     z-index: 100;
 }
 
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
 .navbar a {
     color: white;
     text-decoration: none;
