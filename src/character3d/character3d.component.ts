@@ -20,8 +20,7 @@ export class Character3dComponent implements AfterViewInit, OnDestroy {
 
   constructor(
     private elRef: ElementRef,
-    private renderer2: Renderer2,
-    private cdr: ChangeDetectorRef
+    private renderer2: Renderer2
   ) {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
