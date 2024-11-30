@@ -78,6 +78,8 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
   currentIndex = 0;
   interval: any;
   startTouch: number = 0;
+  isMouseDown: boolean = false;
+  startMouseX: number = 0;
 
   constructor(private scrollService: ScrollService) {}
 
@@ -129,6 +131,33 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
     if (this.startTouch - endTouch > swipeThreshold) {
       this.nextSlide();
     } else if (endTouch - this.startTouch > swipeThreshold) {
+      this.previousSlide();
+    }
+  }
+
+  onMouseDown(event: MouseEvent): void {
+    this.isMouseDown = true;
+    this.startMouseX = event.clientX;
+    this.stopAutoSlide();
+  }
+
+  onMouseMove(event: MouseEvent): void {
+    if (!this.isMouseDown) return;
+  }
+
+  onMouseUp(event: MouseEvent): void {
+    if (!this.isMouseDown) return;
+    this.isMouseDown = false;
+    const endMouseX = event.clientX;
+    this.handleSwipe(this.startMouseX, endMouseX);
+  }
+
+  handleSwipe(start: number, end: number): void {
+    const swipeThreshold = 50;
+
+    if (start - end > swipeThreshold) {
+      this.nextSlide();
+    } else if (end - start > swipeThreshold) {
       this.previousSlide();
     }
     this.stopAutoSlide();
