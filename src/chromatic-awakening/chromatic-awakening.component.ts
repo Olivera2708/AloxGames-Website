@@ -18,7 +18,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
   @ViewChild('games') gamesElement!: ElementRef;
   items = [
     {
-      image: 'assets/volcano.jpg',
+      image: 'assets/volcano.png',
       title: 'Volcanic Region',
       description: `Step into a volcanic region where molten rivers carve paths through a barren, ash-covered terrain. Towering spires of obsidian rise against a sky painted in hues of fiery red and orange, with the air shimmering under the intense heat.<br><br>
         Amidst this unforgiving environment, challenges await. Navigate treacherous paths, solve puzzles amidst steaming fissures, and uncover remnants of a forgotten past.<br><br>
@@ -26,7 +26,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       color: '#d66868'
     },
     {
-      image: 'assets/desert.jpg',
+      image: 'assets/desert.png',
       title: 'Desert Dunes',
       description: `Traverse the endless expanse of desert dunes, where golden sands stretch as far as the eye can see. The sun blazes high above, and whispers of the wind carve shifting patterns in the sand.<br><br>
         Among the barren dunes lie hidden puzzles and secrets buried beneath the surface, waiting to be uncovered. Each challenge brings you closer to unearthing the mysteries of this vast desert.<br><br>
@@ -34,7 +34,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       color: '#e8c561'
     },
     {
-      image: 'assets/tropical.jpg',
+      image: 'assets/tropical.png',
       title: 'Tropical Rainforest',
       description: `Immerse yourself in a tropical rainforest teeming with life, where vibrant foliage and cascading waterfalls create a scene of unparalleled beauty. The air is alive with the sounds of exotic birds and distant thunder.<br><br>
         Hidden within this lush paradise are secrets and challenges waiting to be discovered. Solve puzzles nestled among the vines and rivers to unlock the rainforest's hidden treasures.<br><br>
@@ -42,7 +42,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       color: '#dd945b'
     },
     {
-      image: 'assets/forest.jpg',
+      image: 'assets/forest.png',
       title: 'Ancient Forest',
       description: `Step into an ancient forest where towering oaks and lush undergrowth create a canopy of green serenity. Rays of sunlight pierce through the leaves, illuminating hidden trails and forgotten clearings.<br><br>
         As you explore, uncover puzzles woven into the very fabric of the forest. Solve them to unlock the forest's mysteries and restore its vibrant essence.<br><br>
@@ -58,7 +58,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       color: '#7bbcd5'
     },
     {
-      image: 'assets/marine.jpg',
+      image: 'assets/marine.png',
       title: 'Marine Depths',
       description: `Dive into the heart of an underwater world, where vibrant coral reefs and shimmering schools of fish create a mesmerizing spectacle. The water glistens with sunlight, revealing the hidden wonders of the deep.<br><br>
         Explore the marine depths to uncover puzzles and secrets hidden among the coral. As you progress, the true beauty of the ocean comes into focus.<br><br>
@@ -66,7 +66,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       color: '#da84b0'
     },
     {
-      image: 'assets/mystic.jpg',
+      image: 'assets/mystic.png',
       title: 'Mystic Forest',
       description: `Enter the depths of a mystic forest where towering trees draped in shimmering moss stand against the ethereal glow of twilight. The air is thick with the scent of damp earth and ancient magic, while a faint purple energy pulses through the canopy.<br><br>
         Venture deeper into this enchanted realm, uncovering forgotten paths and hidden wonders. To unlock its secrets, you must restore the lost purple hue that once flowed through its veins.<br><br>

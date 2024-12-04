@@ -13,15 +13,15 @@ export class NavbarComponent implements OnInit {
   navbarOpen: boolean = false;
   isPhone = false;
   isInitialized: boolean = false;
-  isNavbarHidden = true;
+  isNavbarHidden = false;
 
   constructor(private scrollService: ScrollService) {}
 
-  @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    const currentScroll = window.scrollY || document.documentElement.scrollTop;
-    this.isNavbarHidden = currentScroll === 0;
-  }
+  // @HostListener('window:scroll', [])
+  // onWindowScroll(): void {
+  //   const currentScroll = window.scrollY || document.documentElement.scrollTop;
+  //   this.isNavbarHidden = currentScroll <= 0;
+  // }
 
   ngOnInit(): void {
     this.checkIfPhone();
