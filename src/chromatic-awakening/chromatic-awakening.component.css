@@ -6,6 +6,10 @@
   flex-wrap: wrap;
 }
 
+#img-title {
+  width: 35rem;
+}
+
 .ch-left {
   padding: 4rem 6rem 2rem 12rem;
   flex: 1;
@@ -126,6 +130,11 @@ hr {
 }
 
 @media (max-width: 1100px) {
+  #img-title {
+    width: 18rem;
+    margin-bottom: 1rem;
+  }
+
   #chromatic-awakening {
     height: auto;
   }
@@ -186,6 +195,11 @@ hr {
 }
 
 @media (min-width: 1100px) and (max-width: 1600px) {
+  #img-title {
+    width: 27rem;
+    margin-bottom: 1rem;
+  }
+
   .ch-left p {
     width: 100%;
     font-size: 1.3rem;

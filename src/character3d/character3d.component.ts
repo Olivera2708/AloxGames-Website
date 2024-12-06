@@ -74,9 +74,9 @@ export class Character3dComponent implements AfterViewInit, OnDestroy {
   private loadModel(): void {
     const loader = new FBXLoader();
     loader.load(
-      'assets/character.fbx',
+      'assets/char.fbx',
       (fbx: THREE.Object3D) => {
-        fbx.scale.set(0.013, 0.013, 0.013);
+        fbx.scale.set(0.002, 0.002, 0.002);
         fbx.position.set(0, -0.4, 0);
         fbx.rotation.set(0, -0.3, 0);
         this.scene.add(fbx);
