@@ -12,7 +12,7 @@
     </p>
   </div>
   <div class="ch-right">
-    <video id="character" [muted]="'muted'" autoplay loop playsinline>
+    <video id="character" [ngStyle]="isMac ? { '-webkit-filter': 'contrast(105.5%)' } : {}" [muted]="'muted'" autoplay loop playsinline>
       <source [src]="'assets/character.mp4'" type="video/mp4">
       Your browser does not support the video tag.
     </video>

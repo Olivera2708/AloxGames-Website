@@ -78,11 +78,13 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
   startTouch: number = 0;
   isMouseDown: boolean = false;
   startMouseX: number = 0;
+  isMac = false;
 
   constructor(private scrollService: ScrollService) {}
 
   ngOnInit(): void {
-      this.startAutoSlide();
+    this.isMac = navigator.platform.toLowerCase().includes('mac');
+    this.startAutoSlide();
   }
 
   goToSlide(index: number): void {
