@@ -20,7 +20,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       title: 'Volcanic Region',
       description: `Step into a volcanic region where molten rivers carve paths through a barren, ash-covered terrain. Towering spires of obsidian rise against a sky painted in hues of fiery red and orange, with the air shimmering under the intense heat.<br><br>
         Amidst this unforgiving environment, challenges await. Navigate treacherous paths, solve puzzles amidst steaming fissures, and uncover remnants of a forgotten past.<br><br>
-        Restore the vibrant red color to reveal hidden secrets and breathe life back into a world consumed by fire.`,
+        Restore the red color to reveal hidden secrets and breathe life back into a world consumed by fire.`,
       color: '#d66868'
     },
     {
@@ -28,7 +28,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       title: 'Desert Dunes',
       description: `Traverse the endless expanse of desert dunes, where golden sands stretch as far as the eye can see. The sun blazes high above, and whispers of the wind carve shifting patterns in the sand.<br><br>
         Among the barren dunes lie hidden puzzles and secrets buried beneath the surface, waiting to be uncovered. Each challenge brings you closer to unearthing the mysteries of this vast desert.<br><br>
-        Restore the golden yellow color to transform the lifeless sands into a vibrant oasis teeming with life and wonder.`,
+        Restore the yellow color to transform the lifeless sands into a vibrant oasis teeming with life and wonder.`,
       color: '#e8c561'
     },
     {
@@ -36,7 +36,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       title: 'Tropical Rainforest',
       description: `Immerse yourself in a tropical rainforest teeming with life, where vibrant foliage and cascading waterfalls create a scene of unparalleled beauty. The air is alive with the sounds of exotic birds and distant thunder.<br><br>
         Hidden within this lush paradise are secrets and challenges waiting to be discovered. Solve puzzles nestled among the vines and rivers to unlock the rainforest's hidden treasures.<br><br>
-        Restore the bright orange color to awaken the vibrant ecosystem, breathing life into every tree, river, and creature within this tropical haven.`,
+        Restore the orange color to awaken the vibrant ecosystem, breathing life into every tree, river, and creature within this tropical haven.`,
       color: '#dd945b'
     },
     {
@@ -44,7 +44,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       title: 'Ancient Forest',
       description: `Step into an ancient forest where towering oaks and lush undergrowth create a canopy of green serenity. Rays of sunlight pierce through the leaves, illuminating hidden trails and forgotten clearings.<br><br>
         As you explore, uncover puzzles woven into the very fabric of the forest. Solve them to unlock the forest's mysteries and restore its vibrant essence.<br><br>
-        Restore the deep green color to rejuvenate the forest, bringing it to life with thriving plants and animals, transforming it into a sanctuary of growth and harmony.`,
+        Restore the green color to rejuvenate the forest, bringing it to life with thriving plants and animals, transforming it into a sanctuary of growth and harmony.`,
       color: '#348c3d'
     },
     {
@@ -60,7 +60,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
       title: 'Marine Depths',
       description: `Dive into the heart of an underwater world, where vibrant coral reefs and shimmering schools of fish create a mesmerizing spectacle. The water glistens with sunlight, revealing the hidden wonders of the deep.<br><br>
         Explore the marine depths to uncover puzzles and secrets hidden among the coral. As you progress, the true beauty of the ocean comes into focus.<br><br>
-        Restore the bright pink hue to revive the underwater world, bringing coral reefs and marine life back to their former splendor.`,
+        Restore the pink hue to revive the underwater world, bringing coral reefs and marine life back to their former splendor.`,
       color: '#da84b0'
     },
     {
