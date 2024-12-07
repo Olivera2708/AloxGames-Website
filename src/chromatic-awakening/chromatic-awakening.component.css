@@ -9,6 +9,8 @@
 #character {
   margin-top: 4rem;
   height: 36rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 #img-title {
@@ -22,10 +24,12 @@
 
 .ch-right {
   flex: 1;
-  background: #252525;
   display: flex;
   justify-content: center;
   padding-right: 4rem;
+  clip-path: fill-box;
+  border-radius: 0.01px;
+  overflow:hidden;
 }
 
 .area-left {
@@ -137,7 +141,7 @@ hr {
 @media (max-width: 1100px) {
   #character {
     margin-top: 0;
-    height: 32rem;
+    height: 20rem;
   }
 
   #img-title {
@@ -235,6 +239,12 @@ hr {
   .area-right p {
     font-size: 1.3rem;
   }
+}
 
+@media (min-width: 550px) and (max-width: 1100px) {
+  #character {
+    margin-top: 0;
+    height: 38rem;
+  }
 }
 
