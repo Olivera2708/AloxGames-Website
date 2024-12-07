@@ -1,12 +1,10 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ScrollService} from '../scroll.service';
-import {Character3dComponent} from '../character3d/character3d.component';
 import {NgForOf, NgStyle} from '@angular/common';
 
 @Component({
   selector: 'app-chromatic-awakening',
   imports: [
-    Character3dComponent,
     NgForOf,
     NgStyle
   ],

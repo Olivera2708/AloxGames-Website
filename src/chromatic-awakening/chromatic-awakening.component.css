@@ -6,6 +6,11 @@
   flex-wrap: wrap;
 }
 
+#character {
+  margin-top: 4rem;
+  height: 36rem;
+}
+
 #img-title {
   width: 35rem;
 }
@@ -130,6 +135,11 @@ hr {
 }
 
 @media (max-width: 1100px) {
+  #character {
+    margin-top: 0;
+    height: 32rem;
+  }
+
   #img-title {
     width: 18rem;
     margin-bottom: 1rem;

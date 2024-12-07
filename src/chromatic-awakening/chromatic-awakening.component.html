@@ -12,7 +12,10 @@
     </p>
   </div>
   <div class="ch-right">
-      <app-character3d></app-character3d>
+    <video id="character" [muted]="'muted'" autoplay loop playsinline>
+      <source [src]="'assets/test.mp4'" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
   <div class="sample-images"
        (touchstart)="onTouchStart($event)"
