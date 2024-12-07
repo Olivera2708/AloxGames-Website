@@ -122,6 +122,7 @@ export class ChromaticAwakeningComponent implements AfterViewInit, OnInit{
 
   onTouchStart(event: TouchEvent): void {
     this.startTouch = event.touches[0].clientX;
+    this.stopAutoSlide();
   }
 
   onTouchEnd(event: TouchEvent): void {
