@@ -3,8 +3,6 @@
 
 [aloxgames.com](https://aloxgames.com)  
 
----
-
 ## About Us  
 Alox Games is an indie game development studio founded by two passionate creators with a shared vision to craft unique and captivating gaming experiences.  
 
